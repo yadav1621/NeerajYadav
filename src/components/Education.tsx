@@ -1,5 +1,5 @@
-import { EDUCATION_HISTORY, EXTRA_ACTIVITIES } from "../data";
-import { GraduationCap, Award, Calendar, BookOpen, Star, FileCheck2 } from "lucide-react";
+import { EDUCATION_HISTORY, EXTRA_ACTIVITIES, HOBBIES } from "../data";
+import { GraduationCap, Award, Calendar, BookOpen, Star, FileCheck2, Wrench, Workflow, Cpu, Compass } from "lucide-react";
 
 export default function Education() {
   return (
@@ -151,6 +151,46 @@ export default function Education() {
             </div>
           </div>
 
+        </div>
+
+        {/* Continuous Learning & Technical Hobbies Section */}
+        <div className="mt-16 pt-12 border-t border-zinc-200/80 dark:border-zinc-900/60">
+          <div className="space-y-2 mb-8">
+            <h4 className="font-sans text-xs font-bold uppercase tracking-widest text-[#107c10] dark:text-emerald-450 text-emerald-600">
+              Active Growth & Passion
+            </h4>
+            <h3 className="font-sans text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-55 flex items-center gap-2">
+              <Compass className="h-5 w-5 text-indigo-650 dark:text-cyan-400" />
+              <span>Continuous Learning & Engineering Hobbies</span>
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {HOBBIES.map((hobby, index) => {
+              return (
+                <div 
+                  key={index}
+                  className="p-6 rounded-xl border border-zinc-200/80 bg-white/70 shadow-sm hover:shadow-md hover:border-indigo-500/30 transition-all duration-300 dark:border-zinc-850 dark:bg-zinc-900/40 dark:hover:border-cyan-500/30"
+                >
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-100 text-indigo-650 dark:bg-cyan-950 dark:text-cyan-300 mb-4">
+                    {index === 0 ? (
+                      <Wrench className="h-5 w-5" />
+                    ) : index === 1 ? (
+                      <Workflow className="h-5 w-5" />
+                    ) : (
+                      <Cpu className="h-5 w-5" />
+                    )}
+                  </div>
+                  <h4 className="font-sans text-sm font-extrabold text-zinc-950 dark:text-zinc-50 mb-2">
+                    {hobby.name}
+                  </h4>
+                  <p className="font-sans text-xs text-zinc-650 leading-relaxed dark:text-zinc-400">
+                    {hobby.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
       </div>

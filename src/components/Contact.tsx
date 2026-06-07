@@ -67,7 +67,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <div className="mx-auto h-1 w-12 rounded bg-indigo-600 dark:bg-cyan-500" />
-          <p className="font-sans text-sm text-zinc-550 dark:text-zinc-400 max-w-md mx-auto">
+          <p className="font-sans text-sm font-bold text-zinc-800 dark:text-zinc-200 max-w-md mx-auto">
             Ready to integrate complex database workflows or clinical trial structures for your organization?
           </p>
         </div>
@@ -79,7 +79,7 @@ export default function Contact() {
             <h3 className="font-sans text-lg font-black tracking-tight text-zinc-900 dark:text-zinc-150">
               Connect Directly
             </h3>
-            <p className="font-sans text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed">
+            <p className="font-sans text-sm font-bold text-zinc-800 dark:text-zinc-200 leading-relaxed">
               If you have any enterprise inquiries, recruitment discussions, or consulting requests, feel free to reach out via these active channels.
             </p>
 
@@ -93,7 +93,7 @@ export default function Contact() {
                   <Mail className="h-5 w-5" />
                 </span>
                 <div>
-                  <span className="block font-sans text-xs font-bold uppercase tracking-wider text-zinc-400">
+                  <span className="block font-sans text-xs font-black uppercase tracking-wider text-zinc-800 dark:text-zinc-200">
                     Email Address
                   </span>
                   <span className="block font-sans text-sm font-semibold text-zinc-850 dark:text-zinc-200">
@@ -111,7 +111,7 @@ export default function Contact() {
                   <Phone className="h-5 w-5" />
                 </span>
                 <div>
-                  <span className="block font-sans text-xs font-bold uppercase tracking-wider text-zinc-400">
+                  <span className="block font-sans text-xs font-black uppercase tracking-wider text-zinc-800 dark:text-zinc-200">
                     Phone Number
                   </span>
                   <span className="block font-sans text-sm font-semibold text-zinc-850 dark:text-zinc-200">
@@ -126,7 +126,7 @@ export default function Contact() {
                   <MapPin className="h-5 w-5" />
                 </span>
                 <div>
-                  <span className="block font-sans text-xs font-bold uppercase tracking-wider text-zinc-400">
+                  <span className="block font-sans text-xs font-black uppercase tracking-wider text-zinc-800 dark:text-zinc-200">
                     Base Location
                   </span>
                   <span className="block font-sans text-sm font-semibold text-zinc-855 dark:text-zinc-300">
@@ -138,7 +138,7 @@ export default function Contact() {
 
             {/* Social handles links */}
             <div className="flex items-center gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-850">
-              <span className="font-mono text-xs text-zinc-400">Professional Network:</span>
+              <span className="font-mono text-xs font-bold text-zinc-800 dark:text-zinc-200">Professional Network:</span>
               <a
                 href={PERSONAL_INFO.linkedIn}
                 target="_blank"
@@ -201,7 +201,7 @@ export default function Contact() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {/* Name input */}
                     <div className="space-y-1">
-                      <label htmlFor="name-input" className="block text-xs font-mono font-bold text-zinc-400 uppercase tracking-wide">
+                      <label htmlFor="name-input" className="block text-xs font-sans font-extrabold text-zinc-800 dark:text-zinc-200 uppercase tracking-wide">
                         Full Name *
                       </label>
                       <input
@@ -210,7 +210,6 @@ export default function Contact() {
                         type="text"
                         value={formData.name}
                         onChange={handleInputChange}
-                        placeholder="John Doe"
                         disabled={status === "loading"}
                         className="w-full rounded-lg border px-3.5 py-2.5 font-sans text-sm focus:outline-none focus:ring-1 border-zinc-200 focus:border-indigo-600 focus:ring-indigo-600 bg-white dark:border-zinc-800 dark:focus:ring-cyan-500 dark:focus:border-cyan-500 dark:bg-slate-950 text-zinc-900 dark:text-zinc-100 disabled:opacity-60"
                       />
@@ -218,7 +217,7 @@ export default function Contact() {
 
                     {/* Email input */}
                     <div className="space-y-1">
-                      <label htmlFor="email-input" className="block text-xs font-mono font-bold text-zinc-400 uppercase tracking-wide">
+                      <label htmlFor="email-input" className="block text-xs font-sans font-extrabold text-zinc-800 dark:text-zinc-200 uppercase tracking-wide">
                         Email Address *
                       </label>
                       <input
@@ -227,7 +226,6 @@ export default function Contact() {
                         type="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        placeholder="john@organization.com"
                         disabled={status === "loading"}
                         className="w-full rounded-lg border px-3.5 py-2.5 font-sans text-sm focus:outline-none focus:ring-1 border-zinc-200 focus:border-indigo-600 focus:ring-indigo-600 bg-white dark:border-zinc-800 dark:focus:ring-cyan-500 dark:focus:border-cyan-500 dark:bg-slate-950 text-zinc-900 dark:text-zinc-100 disabled:opacity-60"
                       />
@@ -236,7 +234,7 @@ export default function Contact() {
 
                   {/* Subject input */}
                   <div className="space-y-1">
-                    <label htmlFor="subject-input" className="block text-xs font-mono font-bold text-zinc-400 uppercase tracking-wide">
+                    <label htmlFor="subject-input" className="block text-xs font-sans font-extrabold text-zinc-800 dark:text-zinc-200 uppercase tracking-wide">
                       Subject
                     </label>
                     <input
@@ -253,7 +251,7 @@ export default function Contact() {
 
                   {/* Message Input */}
                   <div className="space-y-1">
-                    <label htmlFor="message-input" className="block text-xs font-mono font-bold text-zinc-400 uppercase tracking-wide">
+                    <label htmlFor="message-input" className="block text-xs font-sans font-extrabold text-zinc-800 dark:text-zinc-200 uppercase tracking-wide">
                       Message Body *
                     </label>
                     <textarea

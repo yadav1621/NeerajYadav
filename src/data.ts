@@ -48,12 +48,12 @@ export const PERSONAL_INFO = {
   email: "neerajyadav1621@gmail.com",
   phone: "9619599659",
   address: "Thane, Maharashtra, India",
-  linkedIn: "https://www.linkedin.com/in/neeraj-yadav",
+  linkedIn: "https://www.linkedin.com/in/neeraj-yadav-4b5026237",
   github: "https://github.com/neerajyadav1621", // Suggested format
   summary: "Experienced Full Stack .NET Developer with 3.6+ years of hands-on experience in designing, developing, and maintaining enterprise-grade web and desktop applications. Strong proficiency in .NET technologies and SQL Server, with deep exposure to clinical research systems (CTMS, LIMS, Specimen Tracking) and Helpdesk/Ticketing systems. Reputable track record acting in Senior capabilities to guide architecture design, implement secure system integrations, and deploy regulatory-compliant workflows within agile development environments.",
   strengths: [
     { title: "Clinical domain knowledge", description: "In-depth understanding of CTMS, LIMS, and Specimen Tracking with regulatory compliance (audit trails, electronic records processing)." },
-    { title: "Senior Full-Stack .NET Expertise", description: "Proficient in ASP.NET Core MVC, Web Forms, Entity Framework, C# backends, and high-performance SQL databases." },
+    { title: "Senior Full-Stack .NET Expertise", description: "Proficient in ASP.NET Core MVC, Web Forms, ADO.NET, C# backends, and high-performance SQL databases." },
     { title: "Database Optimization & Design", description: "Design and deep scaling of SQL tables, stored procedures, views, and index optimizations for complex datasets." },
     { title: "Agile Leadership & Workflows", description: "Active collaboration in client discussions (URS specification), automated notification pipelines, testing phases (UAT), and full production releases." }
   ],
@@ -90,10 +90,10 @@ export const SKILL_CATEGORIES = [
     ]
   },
   {
-    name: "Databases & ORMs",
+    name: "Databases & Data Access",
     skills: [
       { name: "SQL Server", level: 92 },
-      { name: "Entity Framework", level: 88 },
+      { name: "ADO.NET", level: 92 },
       { name: "Database Design / Sp & Views", level: 90 }
     ]
   },
@@ -144,7 +144,7 @@ export const PROJECTS: Project[] = [
       "Designed and optimized SQL Server database objects, including tables, views, and stored procedures, to support high-volume clinical trial data.",
       "Collaborated with QA, product owners, and clinical operations teams in agile development cycles."
     ],
-    tech: ["C#", "ASP.NET Web Forms", "SQL Server", "XML/JSON", "IIS"],
+    tech: ["C#", "ASP.NET Web Forms", "SQL Server", "ADO.NET", "XML/JSON", "IIS"],
     category: "clinical"
   },
   {
@@ -168,7 +168,7 @@ export const PROJECTS: Project[] = [
       "Created and optimized SQL Server database objects, including tables, queries, and stored procedures for efficient data management.",
       "Collaborated with QA and stakeholders during development, testing, and UAT phases."
     ],
-    tech: ["ASP.NET Core MVC", "C#", "SQL Server", "RESTful API", "Entity Framework"],
+    tech: ["ASP.NET Core MVC", "C#", "SQL Server", "RESTful API", "ADO.NET"],
     category: "clinical"
   },
   {
@@ -188,7 +188,7 @@ export const PROJECTS: Project[] = [
       "Implemented role-based workflows, validation logic, and audit trails to support regulatory compliance and traceability.",
       "Developed and optimized SQL Server database objects, including tables, views, and stored procedures, to ensure performance and data integrity."
     ],
-    tech: ["C#", "ASP.NET Web Forms", "SQL Server", "Entity Framework", "Bootstrap"],
+    tech: ["C#", "ASP.NET Web Forms", "SQL Server", "ADO.NET", "Bootstrap"],
     category: "clinical"
   },
   {
@@ -206,7 +206,7 @@ export const PROJECTS: Project[] = [
       "Participated in URS discussions with clients & stakeholders to understand business workflows, service-level compliance needs, and system expectations.",
       "Provided live production support, monitoring applications, resolving incidents, and delivering timely fixes to ensure system stability."
     ],
-    tech: ["C#", "ASP.NET Web Forms", "SQL Server", "Aesthetic CSS", "SMTP Alerts"],
+    tech: ["C#", "ASP.NET Web Forms", "SQL Server", "ADO.NET", "Aesthetic CSS", "SMTP Alerts"],
     category: "enterprise"
   },
   {
@@ -227,7 +227,7 @@ export const PROJECTS: Project[] = [
       "Implemented automated task tracking with status management (Active/Expired) and comment functionality.",
       "Designed and integrated email notifications and alerts for task assignment and compliance deadlines using SMTP protocols."
     ],
-    tech: ["C#", "ASP.NET Core", "SQL Server", "SMTP Services", "Bootstrap"],
+    tech: ["C#", "ASP.NET Core", "SQL Server", "ADO.NET", "SMTP Services", "Bootstrap"],
     category: "enterprise"
   },
   {
@@ -247,7 +247,7 @@ export const PROJECTS: Project[] = [
       "Developed a Customer Feedback and Rating module with star-based ratings.",
       "Implemented subscription and premium membership alert notifications, including pre-expiry reminders, expiry alerts, and congratulatory emails."
     ],
-    tech: ["ASP.NET", "C#", "SQL Server", "SMTP Protocols", "CSS3 / AJAX"],
+    tech: ["ASP.NET", "C#", "SQL Server", "ADO.NET", "SMTP Protocols", "CSS3 / AJAX"],
     category: "utilities"
   }
 ];
@@ -339,5 +339,25 @@ export const EXTRA_ACTIVITIES: Certification[] = [
     name: "Certificate Course of Attitude and Behavioural Change (4-Days Intensive)",
     duration: "Professional Mindset & Interpersonal Communication Habits",
     date: "May 2018"
+  }
+];
+
+export interface Hobby {
+  name: string;
+  description: string;
+}
+
+export const HOBBIES: Hobby[] = [
+  {
+    name: "Learning New Tools & Tech Stacks",
+    description: "Continuously researching and adopting emerging developer utilities, platforms, and frameworks to stay at the cutting edge of modern software engineering."
+  },
+  {
+    name: "AI Toolkits & Integrated Agent Flows",
+    description: "Exploring advanced AI tools, orchestration pipelines, prompt engineering logic, and microservice flow patterns to automate technical workflows."
+  },
+  {
+    name: "Analyzing System Working Logic & Execution Flows",
+    description: "Deconstructing core platform architectures, execution pipelines, and underlying program flows to understand the granular step-by-step logic of complex applications."
   }
 ];

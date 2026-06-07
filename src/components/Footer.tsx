@@ -134,7 +134,7 @@ export default function Footer({ showPdfModal, onClosePdfModal }: FooterProps) {
                   </div>
                   <div>
                     <span className="block font-bold text-zinc-950">Databases & Tools:</span>
-                    <span className="text-zinc-650 text-xs">SQL Server, Entity Framework, VS, Git, Azure DevOps, TFS</span>
+                    <span className="text-zinc-650 text-xs">SQL Server, ADO.NET, VS, Git, Azure DevOps, TFS</span>
                   </div>
                 </div>
               </div>
