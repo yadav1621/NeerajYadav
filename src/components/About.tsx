@@ -18,7 +18,7 @@ export default function About() {
           <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#107c10] dark:text-emerald-450 text-emerald-600">
             About Neeraj
           </span>
-          <h2 className="font-sans text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-55">
+          <h2 className="font-sans text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
             Professional Profile & DNA
           </h2>
           <div className="mx-auto h-1 w-12 rounded bg-indigo-600 dark:bg-cyan-500" />
@@ -62,7 +62,7 @@ export default function About() {
 
           {/* Right Column: Strengths Display Grid */}
           <div className="lg:col-span-12 xl:col-span-6 space-y-6">
-            <h3 className="font-sans text-xl font-bold text-zinc-900 dark:text-zinc-55 flex items-center gap-2">
+            <h3 className="font-sans text-xl font-bold text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
               <Award className="h-5 w-5 text-emerald-400" />
               <span>Core Strengths & Pillars</span>
             </h3>
@@ -87,7 +87,7 @@ export default function About() {
                   <h4 className="font-sans text-sm font-bold text-zinc-900 dark:text-zinc-100 mb-1.5">
                     {str.title}
                   </h4>
-                  <p className="font-sans text-xs text-zinc-550 leading-normal dark:text-zinc-400">
+                  <p className="font-sans text-xs text-zinc-500 leading-normal dark:text-zinc-400">
                     {str.description}
                   </p>
                 </div>

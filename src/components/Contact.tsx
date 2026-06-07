@@ -63,11 +63,11 @@ export default function Contact() {
           <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#107c10] dark:text-emerald-450 text-emerald-600">
             Secure Connection Channel
           </span>
-          <h2 className="font-sans text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-55">
+          <h2 className="font-sans text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
             Get In Touch
           </h2>
           <div className="mx-auto h-1 w-12 rounded bg-indigo-600 dark:bg-cyan-500" />
-          <p className="font-sans text-sm font-bold text-zinc-800 dark:text-zinc-200 max-w-md mx-auto">
+          <p className="font-sans text-sm font-bold text-zinc-900 dark:text-zinc-50 max-w-md mx-auto">
             Ready to integrate complex database workflows or clinical trial structures for your organization?
           </p>
         </div>

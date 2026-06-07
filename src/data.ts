@@ -53,7 +53,7 @@ export const PERSONAL_INFO = {
   summary: "Experienced Full Stack .NET Developer with 3.6+ years of hands-on experience in designing, developing, and maintaining enterprise-grade web and desktop applications. Strong proficiency in .NET technologies and SQL Server, with deep exposure to clinical research systems (CTMS, LIMS, Specimen Tracking) and Helpdesk/Ticketing systems. Reputable track record acting in Senior capabilities to guide architecture design, implement secure system integrations, and deploy regulatory-compliant workflows within agile development environments.",
   strengths: [
     { title: "Clinical domain knowledge", description: "In-depth understanding of CTMS, LIMS, and Specimen Tracking with regulatory compliance (audit trails, electronic records processing)." },
-    { title: "Senior Full-Stack .NET Expertise", description: "Proficient in ASP.NET Core MVC, Web Forms, ADO.NET, C# backends, and high-performance SQL databases." },
+    { title: "Full-Stack .NET Expertise", description: "Proficient in ASP.NET Core MVC, Web Forms, ADO.NET, C# backends, and high-performance SQL databases." },
     { title: "Database Optimization & Design", description: "Design and deep scaling of SQL tables, stored procedures, views, and index optimizations for complex datasets." },
     { title: "Agile Leadership & Workflows", description: "Active collaboration in client discussions (URS specification), automated notification pipelines, testing phases (UAT), and full production releases." }
   ],

@@ -25,14 +25,11 @@ export default function Skills() {
         
         {/* Section Header */}
         <div className="text-center space-y-3 mb-16">
-          <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#107c10] dark:text-emerald-450 text-emerald-600">
-            Professional Competencies
-          </span>
-          <h2 className="font-sans text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-55">
+          <h2 className="font-sans text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
             Technical Stack & Expertise
           </h2>
           <div className="mx-auto h-1 w-12 rounded bg-indigo-600 dark:bg-cyan-500" />
-          <p className="font-sans text-sm text-zinc-550 dark:text-zinc-400 max-w-lg mx-auto">
+          <p className="font-sans text-sm font-bold text-zinc-900 dark:text-zinc-50 max-w-lg mx-auto">
             Categorized competency rating measuring raw design fluency, architecture optimization, and clinical validation.
           </p>
         </div>

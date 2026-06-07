@@ -11,7 +11,7 @@ export default function Education() {
           <span className="font-mono text-xs font-bold uppercase tracking-widest text-[#107c10] dark:text-emerald-450 text-emerald-600">
             Credentials Portfolio
           </span>
-          <h2 className="font-sans text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-55">
+          <h2 className="font-sans text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
             Education & Certifications
           </h2>
           <div className="mx-auto h-1 w-12 rounded bg-indigo-600 dark:bg-cyan-500" />
@@ -159,7 +159,7 @@ export default function Education() {
             <h4 className="font-sans text-xs font-bold uppercase tracking-widest text-[#107c10] dark:text-emerald-450 text-emerald-600">
               Active Growth & Passion
             </h4>
-            <h3 className="font-sans text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-55 flex items-center gap-2">
+            <h3 className="font-sans text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
               <Compass className="h-5 w-5 text-indigo-650 dark:text-cyan-400" />
               <span>Continuous Learning & Engineering Hobbies</span>
             </h3>
