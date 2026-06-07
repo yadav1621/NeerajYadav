@@ -49,7 +49,7 @@ export const PERSONAL_INFO = {
   phone: "9619599659",
   address: "Thane, Maharashtra, India",
   linkedIn: "https://www.linkedin.com/in/neeraj-yadav-4b5026237",
-  github: "https://github.com/neerajyadav1621", // Suggested format
+  github: "https://github.com/yadav1621", // Suggested format
   summary: "Experienced Full Stack .NET Developer with 3.6+ years of hands-on experience in designing, developing, and maintaining enterprise-grade web and desktop applications. Strong proficiency in .NET technologies and SQL Server, with deep exposure to clinical research systems (CTMS, LIMS, Specimen Tracking) and Helpdesk/Ticketing systems. Reputable track record acting in Senior capabilities to guide architecture design, implement secure system integrations, and deploy regulatory-compliant workflows within agile development environments.",
   strengths: [
     { title: "Clinical domain knowledge", description: "In-depth understanding of CTMS, LIMS, and Specimen Tracking with regulatory compliance (audit trails, electronic records processing)." },
@@ -71,10 +71,10 @@ export const SKILL_CATEGORIES = [
   {
     name: "Back-End Development",
     skills: [
-      { name: "C#", level: 95 },
-      { name: "ASP.NET Core MVC", level: 90 },
-      { name: "ASP.NET Web Forms", level: 85 },
-      { name: "Web API / RESTful APIs", level: 90 },
+      { name: "C#", level: 90 },
+      { name: "ASP.NET Core MVC", level: 80 },
+      { name: "ASP.NET Web Forms", level: 90 },
+      { name: "Web API / RESTful APIs", level: 75 },
       { name: "WCF Services", level: 75 }
     ]
   },
@@ -84,7 +84,7 @@ export const SKILL_CATEGORIES = [
       { name: "HTML5 & CSS3", level: 90 },
       { name: "JavaScript", level: 88 },
       { name: "jQuery", level: 85 },
-      { name: "AJAX", level: 90 },
+      { name: "AJAX", level: 75 },
       { name: "AngularJS / Angular", level: 50 },
       { name: "Bootstrap / Tailwind CSS", level: 85 }
     ]
@@ -361,3 +361,15 @@ export const HOBBIES: Hobby[] = [
     description: "Deconstructing core platform architectures, execution pipelines, and underlying program flows to understand the granular step-by-step logic of complex applications."
   }
 ];
+
+export interface Language {
+  name: string;
+  fluency: string;
+}
+
+export const LANGUAGES: Language[] = [
+  { name: "English", fluency: "Professional / Fluent" },
+  { name: "Hindi", fluency: "Native / Fluent" },
+  { name: "Marathi", fluency: "Fluent" }
+];
+

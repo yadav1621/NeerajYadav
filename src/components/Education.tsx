@@ -1,5 +1,5 @@
-import { EDUCATION_HISTORY, EXTRA_ACTIVITIES, HOBBIES } from "../data";
-import { GraduationCap, Award, Calendar, BookOpen, Star, FileCheck2, Wrench, Workflow, Cpu, Compass } from "lucide-react";
+import { EDUCATION_HISTORY, EXTRA_ACTIVITIES, HOBBIES, LANGUAGES } from "../data";
+import { GraduationCap, Award, Calendar, BookOpen, Star, FileCheck2, Wrench, Workflow, Cpu, Compass, Languages, Globe } from "lucide-react";
 
 export default function Education() {
   return (
@@ -187,6 +187,42 @@ export default function Education() {
                   <p className="font-sans text-xs text-zinc-650 leading-relaxed dark:text-zinc-400">
                     {hobby.description}
                   </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Communication Languages Section */}
+        <div className="mt-12 pt-10 border-t border-zinc-200/80 dark:border-zinc-900/60">
+          <div className="space-y-2 mb-6">
+            <h4 className="font-sans text-xs font-bold uppercase tracking-widest text-[#107c10] dark:text-emerald-455 text-emerald-600">
+              Global Connection
+            </h4>
+            <h3 className="font-sans text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
+              <Languages className="h-5 w-5 text-indigo-650 dark:text-cyan-400" />
+              <span>Communication Languages</span>
+            </h3>
+          </div>
+
+          <div className="flex flex-wrap gap-4">
+            {LANGUAGES.map((lang, index) => {
+              return (
+                <div 
+                  key={index}
+                  className="flex items-center gap-3 px-5 py-3 rounded-xl border border-zinc-200/80 bg-white/70 shadow-sm dark:border-zinc-850 dark:bg-zinc-900/40"
+                >
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-300">
+                    <Globe className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <h4 className="font-sans text-sm font-extrabold text-zinc-950 dark:text-zinc-50 leading-none mb-1.5">
+                      {lang.name}
+                    </h4>
+                    <p className="font-sans text-[11px] text-zinc-650 dark:text-zinc-400 font-bold">
+                      {lang.fluency}
+                    </p>
+                  </div>
                 </div>
               );
             })}
