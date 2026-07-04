@@ -13,7 +13,7 @@ export default function Projects() {
 
   const categories = [
     { value: "all", label: "All Case Studies" },
-    { value: "clinical", label: "Clinical & Lab Research" },
+    { value: "clinical", label: "Clinical trail & Lab Research" },
     { value: "enterprise", label: "Enterprise Workflow" },
     { value: "utilities", label: "Digital Utilities" }
   ];
@@ -42,7 +42,7 @@ export default function Projects() {
   const handleShowLiveNotice = (title: string) => {
     setModalTitle("Staging Gate Clearance Required");
     setModalContent(
-      `The production portal for "${title}" is currently deployed inside the client's internal clinical/clinical operations staging environments. Standard public URLs are disabled to preserve medical validation policies and patient privacy guidelines.`
+      `The production portal for "${title}" is currently deployed inside the client's internal Clinical trail/Clinical trail operations staging environments. Standard public URLs are disabled to preserve medical validation policies and patient privacy guidelines.`
     );
     setModalOpen(true);
   };
@@ -100,7 +100,7 @@ export default function Projects() {
                 <div className="p-6 pb-4 border-b border-zinc-100 bg-zinc-50/50 dark:border-zinc-850 dark:bg-zinc-900/50">
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <span className="font-mono text-[9px] font-bold uppercase tracking-widest text-indigo-650 bg-indigo-600/10 px-2 py-0.5 rounded-full dark:text-cyan-400 border border-indigo-505/10">
-                      {proj.category === "clinical" ? "Life Sciences" : proj.category === "enterprise" ? "Enterprise" : "Utilities"}
+                      {proj.category === "clinical" ? "Clinical trail" : proj.category === "enterprise" ? "Enterprise" : "Utilities"}
                     </span>
                     <div className="flex gap-1">
                       <span className="text-[10px] font-mono font-black text-zinc-900 bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-50 px-2 py-0.5 rounded border border-zinc-300 dark:border-zinc-700">

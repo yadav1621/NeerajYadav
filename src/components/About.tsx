@@ -19,7 +19,7 @@ export default function About() {
             About Neeraj
           </span>
           <h2 className="font-sans text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
-            Professional Profile & DNA
+            Professional Profile
           </h2>
           <div className="mx-auto h-1 w-12 rounded bg-indigo-600 dark:bg-cyan-500" />
         </div>
@@ -34,12 +34,12 @@ export default function About() {
               <span>Personal Brand Statement</span>
             </h3>
             
-            <p className="font-sans text-base leading-relaxed text-zinc-650 dark:text-zinc-350">
+            <p className="font-sans text-base leading-relaxed text-zinc-900 dark:text-zinc-50 font-semibold">
               {PERSONAL_INFO.summary}
             </p>
 
-            <div className="border-l-4 border-indigo-600 pl-4 py-1 italic text-sm text-zinc-650 dark:text-zinc-400 bg-indigo-600/5 rounded-r">
-              &ldquo;Data integrity in clinical domains isn&apos;t just about validation checks; it is about building software architectures you can trust with patient milestones.&rdquo;
+            <div className="border-l-4 border-indigo-600 pl-4 py-1 italic text-sm text-zinc-900 dark:text-zinc-100 font-bold bg-indigo-600/5 rounded-r">
+              &ldquo;Data integrity in Clinical trail domains isn&apos;t just about validation checks; it is about building software architectures you can trust with patient milestones.&rdquo;
             </div>
 
             {/* Core Objectives list */}
@@ -49,7 +49,7 @@ export default function About() {
               </h4>
               <ul className="space-y-3">
                 {objectiveList.map((obj, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-zinc-650 dark:text-zinc-400">
+                  <li key={i} className="flex items-start gap-2 text-sm text-zinc-900 dark:text-zinc-100 font-bold">
                     <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5">
                       <Check className="h-3.5 w-3.5" />
                     </span>
@@ -87,7 +87,7 @@ export default function About() {
                   <h4 className="font-sans text-sm font-bold text-zinc-900 dark:text-zinc-100 mb-1.5">
                     {str.title}
                   </h4>
-                  <p className="font-sans text-xs text-zinc-500 leading-normal dark:text-zinc-400">
+                  <p className="font-sans text-xs text-zinc-950 leading-normal dark:text-zinc-50 font-bold">
                     {str.description}
                   </p>
                 </div>
@@ -101,17 +101,17 @@ export default function About() {
               
               <div className="text-center">
                 <span className="block font-sans text-3xl font-extrabold text-indigo-400 dark:text-cyan-400">3.6+</span>
-                <span className="block font-mono text-[9px] uppercase tracking-widest text-zinc-450">Years of Experience</span>
+                <span className="block font-mono text-[9px] uppercase tracking-widest text-zinc-50 font-bold">Years of Experience</span>
               </div>
               <div className="h-8 w-px bg-zinc-800 hidden sm:block" />
               <div className="text-center">
                 <span className="block font-sans text-3xl font-extrabold text-emerald-400 font-bold">6+</span>
-                <span className="block font-mono text-[9px] uppercase tracking-widest text-zinc-450">Enterprise systems</span>
+                <span className="block font-mono text-[9px] uppercase tracking-widest text-zinc-50 font-bold">Enterprise systems</span>
               </div>
               <div className="h-8 w-px bg-zinc-800 hidden sm:block" />
               <div className="text-center">
                 <span className="block font-sans text-3xl font-extrabold text-indigo-500 font-bold">100%</span>
-                <span className="block font-mono text-[9px] uppercase tracking-widest text-zinc-450">Data Compliance</span>
+                <span className="block font-mono text-[9px] uppercase tracking-widest text-zinc-50 font-bold">Data Compliance</span>
               </div>
             </div>
           </div>

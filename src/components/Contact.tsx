@@ -68,7 +68,7 @@ export default function Contact() {
           </h2>
           <div className="mx-auto h-1 w-12 rounded bg-indigo-600 dark:bg-cyan-500" />
           <p className="font-sans text-sm font-bold text-zinc-900 dark:text-zinc-50 max-w-md mx-auto">
-            Ready to integrate complex database workflows or clinical trial structures for your organization?
+            Ready to integrate complex database workflows or Clinical trail structures for your organization?
           </p>
         </div>
 
@@ -156,7 +156,7 @@ export default function Contact() {
           <div className="lg:col-span-7">
             <div className="p-6 md:p-8 rounded-2xl border border-zinc-200 bg-white/50 backdrop-blur shadow-sm dark:border-zinc-850 dark:bg-zinc-900/40">
               <h3 className="font-sans text-lg font-black tracking-tight text-zinc-905 dark:text-zinc-150 mb-6">
-                Send a Secure Message
+                Send a secure Message
               </h3>
 
               {/* Error list popup */}
@@ -243,7 +243,6 @@ export default function Contact() {
                       type="text"
                       value={formData.subject}
                       onChange={handleInputChange}
-                      placeholder="Enterprise CTMS Consultation Requirement"
                       disabled={status === "loading"}
                       className="w-full rounded-lg border px-3.5 py-2.5 font-sans text-sm focus:outline-none focus:ring-1 border-zinc-200 focus:border-indigo-600 focus:ring-indigo-600 bg-white dark:border-zinc-800 dark:focus:ring-cyan-500 dark:focus:border-cyan-500 dark:bg-slate-950 text-zinc-900 dark:text-zinc-100 disabled:opacity-60"
                     />

@@ -16,7 +16,7 @@ export default function Experience() {
           </h2>
           <div className="mx-auto h-1 w-12 rounded bg-indigo-600 dark:bg-cyan-500" />
           <p className="font-sans text-sm text-zinc-850 dark:text-zinc-50 font-bold max-w-lg mx-auto">
-            A comprehensive journey scaling enterprise systems, writing compliant clinical code, and designing optimized architectures.
+            A comprehensive journey scaling enterprise systems, writing compliant Clinical trail code, and designing optimized architectures.
           </p>
         </div>
 

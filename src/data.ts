@@ -50,9 +50,9 @@ export const PERSONAL_INFO = {
   address: "Thane, Maharashtra, India",
   linkedIn: "https://www.linkedin.com/in/neeraj-yadav-4b5026237",
   github: "https://github.com/yadav1621", // Suggested format
-  summary: "Experienced Full Stack .NET Developer with 3.6+ years of hands-on experience in designing, developing, and maintaining enterprise-grade web and desktop applications. Strong proficiency in .NET technologies and SQL Server, with deep exposure to clinical research systems (CTMS, LIMS, Specimen Tracking) and Helpdesk/Ticketing systems. Reputable track record acting in Senior capabilities to guide architecture design, implement secure system integrations, and deploy regulatory-compliant workflows within agile development environments.",
+  summary: "Experienced Full Stack .NET Developer with 3.6+ years of hands-on experience in designing, developing, and maintaining enterprise-grade web and desktop applications. Strong proficiency in .NET technologies and SQL Server, with deep exposure to Clinical trail systems (WAI 2.0/2.1, LIMS, Specimen Tracking) and Helpdesk/Ticketing systems. Reputable track record acting in Senior capabilities to guide architecture design, implement secure system integrations, and deploy regulatory-compliant workflows within agile development environments.",
   strengths: [
-    { title: "Clinical domain knowledge", description: "In-depth understanding of CTMS, LIMS, and Specimen Tracking with regulatory compliance (audit trails, electronic records processing)." },
+    { title: "Clinical trail domain knowledge", description: "In-depth understanding of WAI 2.0/2.1, LIMS, and Specimen Tracking with regulatory compliance (audit trails, electronic records processing)." },
     { title: "Full-Stack .NET Expertise", description: "Proficient in ASP.NET Core MVC, Web Forms, ADO.NET, C# backends, and high-performance SQL databases." },
     { title: "Database Optimization & Design", description: "Design and deep scaling of SQL tables, stored procedures, views, and index optimizations for complex datasets." },
     { title: "Agile Leadership & Workflows", description: "Active collaboration in client discussions (URS specification), automated notification pipelines, testing phases (UAT), and full production releases." }
@@ -111,7 +111,7 @@ export const SKILL_CATEGORIES = [
 ];
 
 export const OTHER_SKILLS = [
-  "Clinical Research Systems (CTMS)",
+  "Clinical trail Systems (WAI 2.0 & 2.1)",
   "LIMS (Lab Info Management)",
   "Specimen Tracking Workflow",
   "Role-Based Access Control (RBAC)",
@@ -126,23 +126,23 @@ export const OTHER_SKILLS = [
 export const PROJECTS: Project[] = [
   {
     id: "ctms",
-    title: "Clinical Trial Management System (CTMS)",
+    title: "WAI 2.0 and WAI 2.1",
     platform: "Wide-Angle-Insights – Version 2.0 & 2.1",
-    description: "Wide-Angle-Insights is a source-agnostic data science platform built to maximize operational efficiency and compliance in pharma and clinical research trials. The core focuses on enhanced clinical data management, high-performance analytics, and regulatory-compliant document handling.",
+    description: "Wide-Angle-Insights is a source-agnostic data science platform built to maximize operational efficiency and compliance in pharma and Clinical trail trials. The core focuses on enhanced Clinical trail data management, high-performance analytics, and regulatory-compliant document handling.",
     features: [
-      "eSource Integration: Supports electronic capture of clinical observations and findings matching FDA 21 CFR Part 11 requirements.",
+      "eSource Integration: Supports electronic capture of Clinical trail observations and findings matching FDA 21 CFR Part 11 requirements.",
       "Regulatory Audit Trails: Complete traceability and audit readiness for electronic trials data.",
-      "Role-Based Access Control: Granular secure access definitions matching clinical job profiles."
+      "Role-Based Access Control: Granular secure access definitions matching Clinical trail job profiles."
     ],
     challenges: [
       "Integrating disparate source-agnostic data formats into a unified analytics schema.",
       "Ensuring strict compliance logs with high-frequency database writes without sacrificing system latency."
     ],
     responsibilities: [
-      "Developed and enhanced CTMS and eSource modules using ASP.NET Web Forms, C#, and SQL Server.",
+      "Developed and enhanced WAI 2.0 & 2.1 and eSource modules using ASP.NET Web Forms, C#, and SQL Server.",
       "Implemented end-to-end electronic source data capture workflows with validation checks, audit trails, and role-based access controls.",
-      "Designed and optimized SQL Server database objects, including tables, views, and stored procedures, to support high-volume clinical trial data.",
-      "Collaborated with QA, product owners, and clinical operations teams in agile development cycles."
+      "Designed and optimized SQL Server database objects, including tables, views, and stored procedures, to support high-volume Clinical trail data.",
+      "Collaborated with QA, product owners, and Clinical trail operations teams in agile development cycles."
     ],
     tech: ["C#", "ASP.NET Web Forms", "SQL Server", "ADO.NET", "XML/JSON", "IIS"],
     category: "clinical"
@@ -151,7 +151,7 @@ export const PROJECTS: Project[] = [
     id: "lims",
     title: "Laboratory Information Management System (LIMS)",
     platform: "LIMS Enterprise Platform - Version 1.0 (Ongoing)",
-    description: "An enterprise system designed to automate laboratory workflows, track patient specimen lifecycles from collection to testing, and manage test results within pharma and clinical research environments. It ensures complete data integrity and regulatory compliance.",
+    description: "An enterprise system designed to automate laboratory workflows, track patient specimen lifecycles from collection to testing, and manage test results within pharma and Clinical trail environments. It ensures complete data integrity and regulatory compliance.",
     features: [
       "RESTful API ecosystem supporting lab equipment integration and automatic data ingestion.",
       "Dynamic sample tracking dashboard with interactive visual guides.",
@@ -174,7 +174,7 @@ export const PROJECTS: Project[] = [
   {
     id: "specimen-tracking",
     title: "Specimen Tracking System",
-    description: "Enables secure, real-time tracking of clinical specimens and patient samples from collection, labeling, transportation, storage, through analysis. Designed to minimize laboratory errors and ensure full traceability.",
+    description: "Enables secure, real-time tracking of Clinical trail specimens and patient samples from collection, labeling, transportation, storage, through analysis. Designed to minimize laboratory errors and ensure full traceability.",
     features: [
       "Proper bar-coding and status labeling validation workflows.",
       "Full audit trail for regulatory validation in healthcare setups."
@@ -184,7 +184,7 @@ export const PROJECTS: Project[] = [
       "Developing strict error checking logic to prevent specimen misidentification."
     ],
     responsibilities: [
-      "Designed, developed, and enhanced application modules using ASP.NET Web Forms, C#, and SQL Server in pharma & clinical research environments.",
+      "Designed, developed, and enhanced application modules using ASP.NET Web Forms, C#, and SQL Server in pharma & Clinical trail environments.",
       "Implemented role-based workflows, validation logic, and audit trails to support regulatory compliance and traceability.",
       "Developed and optimized SQL Server database objects, including tables, views, and stored procedures, to ensure performance and data integrity."
     ],
@@ -259,11 +259,11 @@ export const EXPERIENCE_HISTORY: Experience[] = [
     company: "Opus Analytics Pvt. Ltd.",
     location: "Thane, Maharashtra",
     period: "April 2023 - Present (3.6+ years total)",
-    description: "Spearheading development of enterprise-grade clinical research software modules. Entrusted with acting-senior leadership to manage client-facing requirements mapping, design complex server routing schemas, and steer multi-tier clinical trial tracking platforms.",
+    description: "Spearheading development of enterprise-grade Clinical trail software modules. Entrusted with acting-senior leadership to manage client-facing requirements mapping, design complex server routing schemas, and steer multi-tier Clinical trail tracking platforms.",
     highlights: [
       "Steered end-to-end data compliance architectures conforming to strict 21 CFR Part 11 requirements including tamper-proof audit trails and RBAC lists.",
       "Optimized complex SQL Server query processing, indexing, and stored procedures, achieving a 25% throughput improvement on key sample logs.",
-      "Collaborated as acting tech-lead with QA, product owners, and clinical operation managers in fast-paced Agile sprint planning phases."
+      "Collaborated as acting tech-lead with QA, product owners, and Clinical trail operations managers in fast-paced Agile sprint planning phases."
     ]
   },
   {
@@ -328,7 +328,7 @@ export const EXTRA_ACTIVITIES: Certification[] = [
     duration: "Advanced algorithm design, deep neural networks, model training, predictive analytics, and spatial computing integration.",
     institution: "Vishlesan i-Hub, IIT Patna (Indian Institute of Technology, Patna)",
     date: "Ongoing Course",
-    progress: 46
+    progress: 50
   },
   {
     name: "Certificate Course of Hybrid Mobile App Development (5-Days Intensive)",
@@ -370,6 +370,7 @@ export interface Language {
 export const LANGUAGES: Language[] = [
   { name: "English", fluency: "Professional / Fluent" },
   { name: "Hindi", fluency: "Native / Fluent" },
-  { name: "Marathi", fluency: "Fluent" }
+  { name: "Marathi", fluency: "Fluent" },
+  { name: "Bhojpuri", fluency: "Native / Fluent" }
 ];
 

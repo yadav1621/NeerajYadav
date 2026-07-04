@@ -11,7 +11,7 @@ export default function Hero({ onOpenPdf }: HeroProps) {
   const titles = [
     "Full Stack Software Developer",
     ".NET Core MVC Specialist",
-    "Clinical Systems Engineer",
+    "Clinical trail Systems Engineer",
     "SQL Database Architect"
   ];
 
@@ -127,19 +127,19 @@ export default function Hero({ onOpenPdf }: HeroProps) {
 
           {/* Core Strengths Quick Badges */}
           <div className="grid grid-cols-2 gap-3 pt-2">
-            <div className="flex items-center gap-2 text-sm text-zinc-650 dark:text-zinc-400">
+            <div className="flex items-center gap-2 text-sm text-zinc-900 dark:text-zinc-50 font-bold">
               <Server className="h-4 w-4 text-indigo-600 dark:text-indigo-400 shrink-0" />
               <span>C# & .NET Core Developer</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-zinc-650 dark:text-zinc-400">
+            <div className="flex items-center gap-2 text-sm text-zinc-900 dark:text-zinc-50 font-bold">
               <Database className="h-4 w-4 text-cyan-500 shrink-0" />
               <span>SQL Server Tuning Expert</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-zinc-650 dark:text-zinc-400">
+            <div className="flex items-center gap-2 text-sm text-zinc-900 dark:text-zinc-50 font-bold">
               <CheckCircle className="h-4 w-4 text-indigo-600 dark:text-indigo-400 shrink-0" />
-              <span>Clinical software (21 CFR Part 11)</span>
+              <span>Clinical trail software (21 CFR Part 11)</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-zinc-650 dark:text-zinc-400">
+            <div className="flex items-center gap-2 text-sm text-zinc-900 dark:text-zinc-50 font-bold">
               <Smartphone className="h-4 w-4 text-cyan-500 shrink-0" />
               <span>Agile Lead (URS mapping)</span>
             </div>
@@ -397,18 +397,18 @@ export default function Hero({ onOpenPdf }: HeroProps) {
                       className="space-y-3 flex-grow"
                     >
                       <div className="space-y-1">
-                        <p className="text-emerald-600 dark:text-emerald-400 font-semibold">// Live .NET Environment Schema</p>
-                        <p className="text-zinc-650 dark:text-zinc-400"><span className="text-indigo-650 dark:text-indigo-400">using</span> System.ClinicalDomain.CTMS;</p>
-                        <p className="text-zinc-650 dark:text-zinc-400"><span className="text-indigo-650 dark:text-indigo-400">using</span> Microsoft.AspNetCore.Mvc;</p>
+                        <p className="text-emerald-600 dark:text-emerald-400 font-bold">// Live .NET Environment Schema</p>
+                        <p className="text-zinc-900 dark:text-zinc-50 font-bold"><span className="text-indigo-605 dark:text-indigo-400">using</span> System.ClinicalTrailDomain.WAI;</p>
+                        <p className="text-zinc-900 dark:text-zinc-50 font-bold"><span className="text-indigo-605 dark:text-indigo-400">using</span> Microsoft.AspNetCore.Mvc;</p>
                       </div>
 
                       <div className="border-t pt-2 border-zinc-100 dark:border-zinc-900 text-[11px] leading-relaxed">
-                        <span className="text-emerald-600 dark:text-emerald-400">public class</span> <span className="text-indigo-600 dark:text-indigo-400 font-bold">NeerajYadav</span>
+                        <span className="text-emerald-600 dark:text-emerald-400 font-bold">public class</span> <span className="text-indigo-600 dark:text-indigo-400 font-extrabold">NeerajYadav</span>
                         <p className="ml-2">{"{"}</p>
-                        <p className="ml-4"><span className="text-indigo-505">private const double</span> Experience = <span className="text-cyan-600 dark:text-cyan-400 font-extrabold">3.6</span>; <span className="text-zinc-400">// Yrs</span></p>
-                        <p className="ml-4"><span className="text-indigo-505">public string</span> Codebase {"=>"} <span className="text-emerald-650">"ASP.NET Core & SQL Server"</span>;</p>
-                        <p className="ml-4"><span className="text-indigo-505">public string[]</span> Frameworks {"=>"} <span className="text-emerald-650">new</span>[] {"{ \"React\", \"EF Core\", \"Web API\" }"};</p>
-                        <p className="ml-4"><span className="text-indigo-505">public string</span> FocusArea {"=>"} <span className="text-emerald-650">"CTMS Compliance & SQL Optimization"</span>;</p>
+                        <p className="ml-4"><span className="text-indigo-505 font-bold">private const double</span> Experience = <span className="text-cyan-600 dark:text-cyan-400 font-extrabold">3.6</span>; <span className="text-zinc-600 dark:text-zinc-300 font-bold">// Yrs</span></p>
+                        <p className="ml-4"><span className="text-indigo-505 font-bold">public string</span> Codebase {"=>"} <span className="text-emerald-650 font-bold">"ASP.NET Core & SQL Server"</span>;</p>
+                        <p className="ml-4"><span className="text-indigo-505 font-bold">public string[]</span> Frameworks {"=>"} <span className="text-emerald-650 font-bold">new</span>[] {"{ \"React\", \"EF Core\", \"Web API\" }"};</p>
+                        <p className="ml-4"><span className="text-indigo-505 font-bold">public string</span> FocusArea {"=>"} <span className="text-emerald-650 font-bold">"WAI Compliance & SQL Optimization"</span>;</p>
                         <p className="ml-2">{"}"}</p>
                       </div>
                     </motion.div>

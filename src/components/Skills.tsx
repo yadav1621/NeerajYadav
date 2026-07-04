@@ -30,7 +30,7 @@ export default function Skills() {
           </h2>
           <div className="mx-auto h-1 w-12 rounded bg-indigo-600 dark:bg-cyan-500" />
           <p className="font-sans text-sm font-bold text-zinc-900 dark:text-zinc-50 max-w-lg mx-auto">
-            Categorized competency rating measuring raw design fluency, architecture optimization, and clinical validation.
+            Categorized competency rating measuring raw design fluency, architecture optimization, and Clinical trail validation.
           </p>
         </div>
 
@@ -92,18 +92,18 @@ export default function Skills() {
                 <Sparkles className="h-4.5 w-4.5 text-indigo-600 dark:text-cyan-400 shrink-0" />
                 <span>Competency Insights</span>
               </h3>
-              <p className="font-sans text-sm leading-relaxed text-zinc-650 dark:text-zinc-350">
+              <p className="font-sans text-sm leading-relaxed text-zinc-900 dark:text-zinc-50 font-bold">
                 Neeraj&apos;s technical capabilities span advanced server orchestration via 
-                <strong className="text-zinc-900 dark:text-zinc-50"> C# and ASP.NET Core MVC</strong>, coupled with deep mastery of high-integrity clinical domain processes. Over his 3.6+ years of experience, he has maintained regulatory-compliant database engines with optimal stored procedures, ensuring enterprise security across core networks.
+                <strong className="text-zinc-900 dark:text-zinc-50 font-extrabold"> C# and ASP.NET Core MVC</strong>, coupled with deep mastery of high-integrity Clinical trail domain processes. Over his 3.6+ years of experience, he has maintained regulatory-compliant database engines with optimal stored procedures, ensuring enterprise security across core networks.
               </p>
               <div className="grid grid-cols-2 gap-4 pt-2">
                 <div className="space-y-1">
                   <span className="block text-2xl font-sans font-extrabold text-[#107c10] dark:text-emerald-400">95%</span>
-                  <span className="block text-[10px] uppercase font-bold font-mono text-zinc-455">C# Framework Speed</span>
+                  <span className="block text-[10px] uppercase font-extrabold font-mono text-zinc-900 dark:text-zinc-100">C# Framework Speed</span>
                 </div>
                 <div className="space-y-1">
                   <span className="block text-2xl font-sans font-extrabold text-indigo-600 dark:text-cyan-400">92%</span>
-                  <span className="block text-[10px] uppercase font-bold font-mono text-zinc-455">SQL Query Optimization</span>
+                  <span className="block text-[10px] uppercase font-extrabold font-mono text-zinc-900 dark:text-zinc-100">SQL Query Optimization</span>
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Skills() {
             {OTHER_SKILLS.map((tag) => (
               <span
                 key={tag}
-                className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border font-sans text-xs font-medium cursor-default bg-white border-zinc-200 hover:border-indigo-500 hover:bg-zinc-50 transition-colors text-zinc-700 dark:bg-zinc-950 dark:border-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-900"
+                className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg border font-sans text-xs font-bold cursor-default bg-white border-zinc-200 hover:border-indigo-500 hover:bg-zinc-50 transition-colors text-zinc-900 dark:bg-zinc-950 dark:border-zinc-900 dark:text-zinc-50 dark:hover:bg-zinc-900"
               >
                 <Star className="h-3 w-3 text-indigo-650 fill-indigo-600 dark:text-cyan-400 dark:fill-cyan-400" />
                 <span>{tag}</span>

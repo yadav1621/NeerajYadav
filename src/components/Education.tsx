@@ -143,7 +143,7 @@ export default function Education() {
                 <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-550/10 text-indigo-500 mb-2">
                   <BookOpen className="h-4.5 w-4.5" />
                 </span>
-                <p className="font-sans text-xs text-zinc-600 dark:text-zinc-350 italic">
+                <p className="font-sans text-xs text-zinc-950 dark:text-zinc-100 font-bold italic">
                   &ldquo;A lifelong commitment to upskilling across dynamic client requirements and high-frequency data structures.&rdquo;
                 </p>
               </div>
@@ -156,7 +156,7 @@ export default function Education() {
         {/* Continuous Learning & Technical Hobbies Section */}
         <div className="mt-16 pt-12 border-t border-zinc-200/80 dark:border-zinc-900/60">
           <div className="space-y-2 mb-8">
-            <h4 className="font-sans text-xs font-bold uppercase tracking-widest text-[#107c10] dark:text-emerald-450 text-emerald-600">
+            <h4 className="font-sans text-xs font-bold uppercase tracking-widest text-[#107c10] dark:text-emerald-455 text-emerald-600">
               Active Growth & Passion
             </h4>
             <h3 className="font-sans text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
@@ -184,7 +184,7 @@ export default function Education() {
                   <h4 className="font-sans text-sm font-extrabold text-zinc-950 dark:text-zinc-50 mb-2">
                     {hobby.name}
                   </h4>
-                  <p className="font-sans text-xs text-zinc-650 leading-relaxed dark:text-zinc-400">
+                  <p className="font-sans text-xs text-zinc-950 leading-relaxed dark:text-zinc-100 font-bold">
                     {hobby.description}
                   </p>
                 </div>
@@ -219,7 +219,7 @@ export default function Education() {
                     <h4 className="font-sans text-sm font-extrabold text-zinc-950 dark:text-zinc-50 leading-none mb-1.5">
                       {lang.name}
                     </h4>
-                    <p className="font-sans text-[11px] text-zinc-650 dark:text-zinc-400 font-bold">
+                    <p className="font-sans text-[11px] text-zinc-950 dark:text-zinc-100 font-black">
                       {lang.fluency}
                     </p>
                   </div>
