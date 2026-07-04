@@ -6,10 +6,12 @@ interface HeaderProps {
   isDark: boolean;
   onToggleTheme: () => void;
   onOpenPdf: () => void;
+  customPhoto?: string;
 }
 
-export default function Header({ isDark, onToggleTheme, onOpenPdf }: HeaderProps) {
+export default function Header({ isDark, onToggleTheme, onOpenPdf, customPhoto }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [imgError, setImgError] = useState(false);
 
   const navItems = [
     { label: "Overview", href: "#hero" },
@@ -41,9 +43,30 @@ export default function Header({ isDark, onToggleTheme, onOpenPdf }: HeaderProps
         <div className="flex h-16 items-center justify-between">
           {/* Logo Brand */}
           <div className="flex items-center gap-2">
-            <span className="flex h-10 w-10 items-center justify-center rounded-lg font-mono text-lg font-black tracking-normal bg-indigo-600 dark:bg-cyan-500 text-white dark:text-zinc-950 shadow-md shadow-indigo-500/20 dark:shadow-cyan-550/10">
-              NY
-            </span>
+            {customPhoto ? (
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-800 shadow-md shadow-indigo-500/20 dark:shadow-cyan-550/10">
+                <img
+                  src={customPhoto}
+                  alt="Neeraj Yadav"
+                  className="h-full w-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            ) : !imgError ? (
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-800 shadow-md shadow-indigo-500/20 dark:shadow-cyan-550/10">
+                <img
+                  src="/Neeraj.png"
+                  alt="Neeraj Yadav"
+                  className="h-full w-full object-cover"
+                  referrerPolicy="no-referrer"
+                  onError={() => setImgError(true)}
+                />
+              </div>
+            ) : (
+              <span className="flex h-10 w-10 items-center justify-center rounded-lg font-mono text-lg font-black tracking-normal bg-indigo-600 dark:bg-cyan-500 text-white dark:text-zinc-950 shadow-md shadow-indigo-500/20 dark:shadow-cyan-550/10">
+                NY
+              </span>
+            )}
             <div>
               <span className="block font-sans text-sm font-black tracking-tight text-zinc-900 dark:text-zinc-50">
                 {PERSONAL_INFO.name}
@@ -87,7 +110,7 @@ export default function Header({ isDark, onToggleTheme, onOpenPdf }: HeaderProps
               className="hidden sm:flex items-center gap-1.5 rounded-lg px-3.5 py-1.5 font-sans text-xs font-bold leading-none cursor-pointer uppercase tracking-wider text-white bg-indigo-600 hover:bg-indigo-700 transition-all shadow-md shadow-indigo-650/10"
             >
               <Download className="h-3.5 w-3.5" />
-              <span>Get Resume</span>
+              <span>Export CV to PDF</span>
             </button>
 
             {/* Mobile Menu Action */}
@@ -125,7 +148,7 @@ export default function Header({ isDark, onToggleTheme, onOpenPdf }: HeaderProps
             className="flex w-full items-center justify-center gap-2 rounded-lg px-3 py-2.5 mt-2 font-sans text-xs uppercase tracking-widest font-bold bg-indigo-600 text-white hover:bg-indigo-750 transition"
           >
             <Download className="h-4 w-4" />
-            <span>Generate & Export CV</span>
+            <span>Print / Export CV to PDF</span>
           </button>
         </div>
       )}

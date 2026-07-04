@@ -15,6 +15,7 @@ export default function Footer({ showPdfModal, onClosePdfModal }: FooterProps) {
   };
 
   const handlePrint = () => {
+    window.focus();
     window.print();
   };
 
@@ -51,10 +52,10 @@ export default function Footer({ showPdfModal, onClosePdfModal }: FooterProps) {
             <div className="flex items-center justify-between px-6 py-4 border-b border-zinc-100 bg-zinc-50">
               <div>
                 <h3 className="font-sans font-black text-sm text-zinc-800 flex items-center gap-1.5">
-                  Neeraj Yadav &mdash; Curriculum Vitae Ledger
+                  Neeraj Yadav &mdash; Curriculum Vitae
                 </h3>
                 <p className="text-[10px] text-indigo-650 font-mono font-bold uppercase tracking-widest">
-                  Optimized for printing (US Letter / A4 Paper layouts)
+                  Optimized for printing &bull; Select "Save as PDF" in the browser to Export
                 </p>
               </div>
               
@@ -65,7 +66,7 @@ export default function Footer({ showPdfModal, onClosePdfModal }: FooterProps) {
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded bg-indigo-600 hover:bg-indigo-700 text-white font-sans text-xs font-bold cursor-pointer transition uppercase tracking-wider shadow shadow-indigo-600/10"
                 >
                   <Printer className="h-3.5 w-3.5" />
-                  <span>Print CV Ledger</span>
+                  <span>Export to PDF / Print</span>
                 </button>
                 <button
                   id="close-cv"

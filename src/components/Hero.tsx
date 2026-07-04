@@ -5,9 +5,11 @@ import { motion, AnimatePresence } from "motion/react";
 
 interface HeroProps {
   onOpenPdf: () => void;
+  customPhoto?: string;
+  onPhotoChange?: (photo: string) => void;
 }
 
-export default function Hero({ onOpenPdf }: HeroProps) {
+export default function Hero({ onOpenPdf, customPhoto, onPhotoChange }: HeroProps) {
   const titles = [
     "Full Stack Software Developer",
     ".NET Core MVC Specialist",
@@ -21,13 +23,6 @@ export default function Hero({ onOpenPdf }: HeroProps) {
   const [typingSpeed, setTypingSpeed] = useState(100);
   const [activeTab, setActiveTab] = useState<"headshot" | "system">("headshot");
   const [imgError, setImgError] = useState(false);
-  const [customPhoto, setCustomPhoto] = useState<string>(() => {
-    try {
-      return localStorage.getItem("neeraj_custom_photo") || "";
-    } catch {
-      return "";
-    }
-  });
 
   const handlePhotoUpload = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -40,7 +35,9 @@ export default function Hero({ onOpenPdf }: HeroProps) {
         } catch (err) {
           console.error("Failed to save photo to localStorage: ", err);
         }
-        setCustomPhoto(base64String);
+        if (onPhotoChange) {
+          onPhotoChange(base64String);
+        }
       };
       reader.readAsDataURL(file);
     }
@@ -106,7 +103,7 @@ export default function Hero({ onOpenPdf }: HeroProps) {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
             </span>
-            Targeting Senior Software Developer Roles &bull; Thane / Mumbai / Remote
+            Targeting Senior Software Developer Roles &bull; Thane / Mumbai / Pune / Chennai / Hyderabad / Bengaluru / Remote
           </div>
 
           <h1 className="font-sans text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-zinc-900 dark:text-zinc-50 leading-none">
@@ -166,7 +163,7 @@ export default function Hero({ onOpenPdf }: HeroProps) {
                className="flex items-center justify-center gap-2 rounded-lg border border-dashed border-zinc-350 hover:border-zinc-500 text-zinc-750 hover:bg-zinc-50/50 font-sans font-bold py-3.5 px-6 transition-all cursor-pointer dark:border-zinc-750 dark:text-zinc-300 dark:hover:bg-zinc-900/30 uppercase tracking-wider text-xs"
             >
               <Download className="h-4 w-4" />
-              <span>Generate CV</span>
+              <span>Print / Export CV</span>
             </button>
           </div>
 
@@ -254,7 +251,7 @@ export default function Hero({ onOpenPdf }: HeroProps) {
                     >
                       <div className="space-y-1">
                         <span className="block text-[10px] font-mono uppercase tracking-widest text-indigo-600 dark:text-cyan-454 font-bold border-b pb-1 dark:border-zinc-900">
-                          // Enterprise Identity Ledger
+                          // Enterprise Identity
                         </span>
                       </div>
 
@@ -269,7 +266,9 @@ export default function Hero({ onOpenPdf }: HeroProps) {
                                 try {
                                   localStorage.removeItem("neeraj_custom_photo");
                                 } catch (e) {}
-                                setCustomPhoto("");
+                                if (onPhotoChange) {
+                                  onPhotoChange("");
+                                }
                               }}
                               title="Reset to Default Avatar"
                               className="p-1 px-2 rounded bg-zinc-950/85 hover:bg-zinc-900 text-[10px] font-sans font-extrabold tracking-wide uppercase text-red-400 border border-zinc-800 transition cursor-pointer flex items-center gap-1 hover:scale-105 active:scale-95 shadow-lg"
@@ -302,13 +301,15 @@ export default function Hero({ onOpenPdf }: HeroProps) {
                               try {
                                 localStorage.removeItem("neeraj_custom_photo");
                               } catch (e) {}
-                              setCustomPhoto("");
+                              if (onPhotoChange) {
+                                onPhotoChange("");
+                              }
                             }}
                             referrerPolicy="no-referrer"
                           />
                         ) : !imgError ? (
                           <img
-                            src="/assets/neeraj_profile.png"
+                            src="/Neeraj.png"
                             alt="Neeraj Rajendra Prasad Yadav"
                             className="w-full h-full object-cover rounded-xl"
                             onError={() => setImgError(true)}

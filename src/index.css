@@ -25,24 +25,98 @@
 
 /* Print Overrides */
 @media print {
-  body * {
-    visibility: hidden;
-  }
-  .print-section, .print-section * {
-    visibility: visible;
-  }
-  .print-section {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0 !important;
-    background: white !important;
-    color: black !important;
-  }
-  /* Hide UI elements during print generation */
-  #back-to-top, header, footer, #print-cv, #close-cv {
+  /* Hide all top-level main elements except the fixed modal container */
+  body > div:not(.fixed),
+  header,
+  footer > *:not(.fixed),
+  #back-to-top {
     display: none !important;
+  }
+
+  /* Reset html and body layout for absolute document flow */
+  html, body {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Reset the modal backdrop container to flow inline on the page */
+  .fixed.inset-0.z-50 {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    display: block !important;
+    z-index: auto !important;
+  }
+
+  /* Reset the modal box itself to be flat, seamless, and fully expanded */
+  .relative.w-full.max-w-4xl.rounded-2xl {
+    position: relative !important;
+    max-height: none !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    display: block !important;
+    border: none !important;
+    background: white !important;
+  }
+
+  /* Hide the modal's header controls (Print button, Close button) on the paper */
+  .border-b.border-zinc-100.bg-zinc-50 {
+    display: none !important;
+  }
+
+  /* Style the print section container to be fully visible and wrap beautifully */
+  .print-section {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    display: block !important;
+  }
+
+  /* Avoid page breaks inside logical CV units */
+  .print-section > div {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Clean up colors for high contrast ink-friendly printing */
+  .text-indigo-650, .text-indigo-600, .text-indigo-655 {
+    color: #4f46e5 !important;
+  }
+  
+  .text-zinc-950, .text-zinc-900 {
+    color: #000000 !important;
+  }
+  
+  .text-zinc-700, .text-zinc-650, .text-zinc-600 {
+    color: #1f2937 !important;
+  }
+
+  .border-zinc-200, .border-zinc-100, .border-zinc-150 {
+    border-color: #e5e7eb !important;
+  }
+
+  /* Page break helper class if needed */
+  .page-break {
+    page-break-before: always !important;
+    break-before: page !important;
   }
 }
