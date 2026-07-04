@@ -27,9 +27,7 @@ export default function Footer({ showPdfModal, onClosePdfModal }: FooterProps) {
             <p className="font-sans font-extrabold text-zinc-805 dark:text-zinc-200">
               © 2026 {PERSONAL_INFO.fullName}. All rights reserved.
             </p>
-            <p className="font-mono text-[9px] text-zinc-400">
-              Coded beautifully with React 19, Tailwind CSS v4 & Motion.
-            </p>
+
           </div>
 
           <button

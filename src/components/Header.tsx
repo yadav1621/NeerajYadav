@@ -6,10 +6,9 @@ interface HeaderProps {
   isDark: boolean;
   onToggleTheme: () => void;
   onOpenPdf: () => void;
-  customPhoto?: string;
 }
 
-export default function Header({ isDark, onToggleTheme, onOpenPdf, customPhoto }: HeaderProps) {
+export default function Header({ isDark, onToggleTheme, onOpenPdf }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [imgError, setImgError] = useState(false);
 
@@ -43,16 +42,7 @@ export default function Header({ isDark, onToggleTheme, onOpenPdf, customPhoto }
         <div className="flex h-16 items-center justify-between">
           {/* Logo Brand */}
           <div className="flex items-center gap-2">
-            {customPhoto ? (
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-800 shadow-md shadow-indigo-500/20 dark:shadow-cyan-550/10">
-                <img
-                  src={customPhoto}
-                  alt="Neeraj Yadav"
-                  className="h-full w-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-            ) : !imgError ? (
+            {!imgError ? (
               <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-800 shadow-md shadow-indigo-500/20 dark:shadow-cyan-550/10">
                 <img
                   src="/Neeraj.png"

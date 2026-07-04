@@ -18,13 +18,6 @@ export default function App() {
   const [isDark, setIsDark] = useState<boolean>(true);
   const [showPdfModal, setShowPdfModal] = useState<boolean>(false);
   const [isMounted, setIsMounted] = useState<boolean>(false);
-  const [customPhoto, setCustomPhoto] = useState<string>(() => {
-    try {
-      return localStorage.getItem("neeraj_custom_photo") || "";
-    } catch {
-      return "";
-    }
-  });
 
   // Set default theme state on mount
   useEffect(() => {
@@ -63,14 +56,11 @@ export default function App() {
           isDark={isDark} 
           onToggleTheme={handleToggleTheme} 
           onOpenPdf={() => setShowPdfModal(true)} 
-          customPhoto={customPhoto}
         />
 
         {/* Home Overview Hero */}
         <Hero 
           onOpenPdf={() => setShowPdfModal(true)} 
-          customPhoto={customPhoto}
-          onPhotoChange={setCustomPhoto}
         />
 
         {/* Detailed DNA About Section */}

@@ -1,15 +1,13 @@
-import { useEffect, useState, ChangeEvent } from "react";
-import { ArrowRight, Download, Linkedin, Mail, CheckCircle, Database, Server, Smartphone, ExternalLink, Camera, RefreshCw } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowRight, Download, Linkedin, Mail, CheckCircle, Database, Server, Smartphone, ExternalLink } from "lucide-react";
 import { PERSONAL_INFO } from "../data";
 import { motion, AnimatePresence } from "motion/react";
 
 interface HeroProps {
   onOpenPdf: () => void;
-  customPhoto?: string;
-  onPhotoChange?: (photo: string) => void;
 }
 
-export default function Hero({ onOpenPdf, customPhoto, onPhotoChange }: HeroProps) {
+export default function Hero({ onOpenPdf }: HeroProps) {
   const titles = [
     "Full Stack Software Developer",
     ".NET Core MVC Specialist",
@@ -23,25 +21,6 @@ export default function Hero({ onOpenPdf, customPhoto, onPhotoChange }: HeroProp
   const [typingSpeed, setTypingSpeed] = useState(100);
   const [activeTab, setActiveTab] = useState<"headshot" | "system">("headshot");
   const [imgError, setImgError] = useState(false);
-
-  const handlePhotoUpload = (e: ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        const base64String = reader.result as string;
-        try {
-          localStorage.setItem("neeraj_custom_photo", base64String);
-        } catch (err) {
-          console.error("Failed to save photo to localStorage: ", err);
-        }
-        if (onPhotoChange) {
-          onPhotoChange(base64String);
-        }
-      };
-      reader.readAsDataURL(file);
-    }
-  };
 
   useEffect(() => {
     let timer: NodeJS.Timeout;
@@ -255,59 +234,9 @@ export default function Hero({ onOpenPdf, customPhoto, onPhotoChange }: HeroProp
                         </span>
                       </div>
 
-                      {/* Headshot Spot - Supports real uploaded image / beautiful high-fidelity likeness SVG fallback */}
+                      {/* Headshot Spot - Show high-quality portrait of Neeraj Yadav */}
                       <div className="relative rounded-xl border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/30 overflow-hidden shadow-inner flex items-center justify-center max-w-[280px] mx-auto aspect-[4/5] group">
-                        
-                        {/* Custom Photo Overlay Action Buttons */}
-                        <div className="absolute top-2.5 right-2.5 z-20 flex gap-2 opacity-80 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                          {customPhoto && (
-                            <button
-                              onClick={() => {
-                                try {
-                                  localStorage.removeItem("neeraj_custom_photo");
-                                } catch (e) {}
-                                if (onPhotoChange) {
-                                  onPhotoChange("");
-                                }
-                              }}
-                              title="Reset to Default Avatar"
-                              className="p-1 px-2 rounded bg-zinc-950/85 hover:bg-zinc-900 text-[10px] font-sans font-extrabold tracking-wide uppercase text-red-400 border border-zinc-800 transition cursor-pointer flex items-center gap-1 hover:scale-105 active:scale-95 shadow-lg"
-                            >
-                              <RefreshCw className="h-3 w-3" />
-                              <span>Reset</span>
-                            </button>
-                          )}
-                          <label
-                            className="p-1 px-2 rounded bg-indigo-600 hover:bg-indigo-700 text-[10px] font-sans font-extrabold tracking-wide uppercase text-white border border-indigo-500/50 transition cursor-pointer flex items-center gap-1 hover:scale-105 active:scale-95 shadow-lg"
-                            title="Upload Original Photo"
-                          >
-                            <Camera className="h-3.5 w-3.5" />
-                            <span>Use My Photo</span>
-                            <input
-                              type="file"
-                              accept="image/*"
-                              className="hidden"
-                              onChange={handlePhotoUpload}
-                            />
-                          </label>
-                        </div>
-
-                        {customPhoto ? (
-                          <img
-                            src={customPhoto}
-                            alt="Neeraj Rajendra Prasad Yadav"
-                            className="w-full h-full object-cover rounded-xl"
-                            onError={() => {
-                              try {
-                                localStorage.removeItem("neeraj_custom_photo");
-                              } catch (e) {}
-                              if (onPhotoChange) {
-                                onPhotoChange("");
-                              }
-                            }}
-                            referrerPolicy="no-referrer"
-                          />
-                        ) : !imgError ? (
+                        {!imgError ? (
                           <img
                             src="/Neeraj.png"
                             alt="Neeraj Rajendra Prasad Yadav"
